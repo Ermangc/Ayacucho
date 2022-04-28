@@ -8,6 +8,8 @@ while (num != 0) {
   }
   let num = Number(prompt("ingrese un numero"));
 }
-if (conIngreso) {
-  console.log("el maximo es", maxNum);
-}
+console.log("el maximo es", maxNum);
+
+//if (conIngreso) {
+//console.log("el maximo es", maxNum);
+//}

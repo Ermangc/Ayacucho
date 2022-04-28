@@ -1,12 +1,14 @@
-let password = "eureka";
+const password = "eureka";
 let numberAttemps = 1;
-let passwordEntered : string;
-while (numberAttemps <= 3 && password =! passwordEntered){
-  passwordEntered = prompt("introduzca la contraseña");
-  attemps ++;
+let passwordEntered : string | null ;
+let correctPassword : boolean = false;
+
+while (correctPassword === false && numberAttemps > 0) {
+  passwordEntered = prompt(`introduzca la contraseña. Le quedan ${numberAttemps} intentos`);
+  if (passwordEntered === password){
+    correctPassword = true;
+    console.log("contraseña correcta");
+  }
+  attemps--;
 }
-if(password = "eureka"){
-  console.log("contraseña correcta");
-}else {
-  console.log("ya no tiene mas intentos")
-}
+if(numberAttemps <= 0)
