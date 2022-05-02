@@ -1,5 +1,5 @@
-let firstNumber: number;
-let secondNumber: number;
+let firstNumber: number = <HTMLInputElement>document.getElementById("number1");
+let secondNumber: number = <HTMLInputElement>document.getElementById("number2");
 let current, addiction: number;
 let btnSend = <HTMLButtonElement>document.getElementById("btnSend");
 current = firstNumber;
