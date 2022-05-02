@@ -2,7 +2,6 @@ let firstNumber = <HTMLInputElement>document.getElementById("number1");
 let secondNumber = <HTMLInputElement>document.getElementById("number2");
 let current, addiction: number;
 let btnSend = <HTMLButtonElement>document.getElementById("btnSend");
-current = firstNumber;
 addiction = 0;
 
 btnSend.addEventListener("click", () => {
