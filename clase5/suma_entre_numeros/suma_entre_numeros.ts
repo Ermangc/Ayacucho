@@ -8,8 +8,8 @@ addiction = 0;
 btnSend.addEventListener("click", () => {
   firstNumber = Number(number1.value);
   secondNumber = Number(number2.value);
-  for (current = firstNumber; current <= secondNumber; current++) {
-    addiction = addiction + current;
+  for (firstNumber; firstNumber <= secondNumber; firstNumber++) {
+    addiction = addiction + firstNumber;
   }
   console.log("el resultado de la suma es: ", addiction);
 });
