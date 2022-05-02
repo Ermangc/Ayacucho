@@ -1,11 +1,12 @@
 let n: number = <HTMLInputElement>document.getElementById("dato");
 let btnEnviar = <HTMLButtonElement>document.getElementById("btnEnviar");
 
-n = dato.value;
+
 let probabCara: number = 1 / 6;
 let probabFinal: number = 1;
 
-btnEnviar.addEventListener("click", () =>){
+btnEnviar.addEventListener("click", () => ){
+  n = Number(dato.value);
   for (let contador = 1; contador <= n; contador++) {
     probabFinal = probabFinal * probabCara;
   }
