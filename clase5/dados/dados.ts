@@ -1,4 +1,4 @@
-let n: number = <HTMLInputElement>document.getElementById("dato");
+let n = <HTMLInputElement>document.getElementById("dato");
 let btnEnviar = <HTMLButtonElement>document.getElementById("btnEnviar");
 
 
@@ -10,5 +10,5 @@ btnEnviar.addEventListener("click", () => ){
   for (let contador = 1; contador <= n; contador++) {
     probabFinal = probabFinal * probabCara;
   }
-  console.log("la Probabilidad es ", probabFinal);
+    console.log("la Probabilidad es ", probabFinal);
 }
