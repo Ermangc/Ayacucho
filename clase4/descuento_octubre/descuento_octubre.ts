@@ -4,8 +4,8 @@ let mounth = <HTMLInputElement>document.getElementById("mounth");
 let btnSend = <HTMLButtonElement>document.getElementById("btnSend");
 
 btnSend.addEventListener("click", () => {
-  amount = amount.value;
-  quantity = quantity.value;
+  amount = Number(amount.value);
+  quantity = Number(quantity.value);
   mounth = mounth.value;
 
   let totalPrice = amount * quantity;
