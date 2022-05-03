@@ -1,13 +1,13 @@
 let conIngresos: boolean = false;
-let num = Number(prompt("Ingrese un numero"));
+let num: number = Number(prompt("Ingrese un numero"));
 let maxNum: number = num;
-while (num != 0) {
+while (num !== 0) {
   conIngresos = true;
   if (num > maxNum) {
     maxNum = num;
   }
-  let num = Number(prompt("ingrese un numero"));
+  num = Number(prompt("ingrese un numero"));
 }
-if (conIngreso) {
+if (conIngresos) {
   console.log("el maximo es", maxNum);
 }
