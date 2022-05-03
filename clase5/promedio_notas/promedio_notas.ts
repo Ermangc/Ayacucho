@@ -1,22 +1,17 @@
-let nombreAlumno = <HTMLInputElement>document.getElementById("nombreAlumno");
-let notaPractica: number = <HTMLInputElement>(
-  document.getElementById("notaPractica")
-);
-let notaTeoria: number = <HTMLInputElement>(
-  document.getElementById("notaTeoria")
-);
-let notaProblema: number = <HTMLInputElement>(
-  document.getElementById("notaProblema")
-);
-let notaFinal: number;
+let nombreAlumno: string = <HTMLInputElement>document.getElementById("nombreAlumno");
+let notaPractica: number = <HTMLInputElement>document.getElementById("notaPractica");
+let notaTeoria: number = <HTMLInputElement>document.getElementById("notaTeoria");
+let notaProblema: number = <HTMLInputElement>document.getElementById("notaProblema");
 let btnEnviar = <HTMLButtonElement>document.getElementById("btnEnviar");
+let notaFinal: number;
+let promedioAlumno = false;
 
 btnEnviar.addEventListener("click", () => {
-  nombreAlumno = nombreAlumno.value;
-  notaPractica = notaPractica.value;
-  notaTeoria = notaTeoria.value;
-  notaProblema = notaProblema.value;
-  while ((nombreAlumno < > ""){
+    while (promedioAlumno = true){
+      nombreAlumno = nombreAlumno.value;
+      notaPractica = Number(notaPractica.value);
+      notaTeoria = Number(notaTeoria.value);
+      notaProblema = Number(notaProblema.value);
     if ((
       notaPractica <= 10 &&
       notaPractica >= 0) &&
@@ -27,6 +22,7 @@ btnEnviar.addEventListener("click", () => {
     )) {
       notaFinal = notaPractica * 0.1 + notaProblema * 0.5 + notaTeoria * 0.4;
       console.log("La nota final de ", nombreAlumno, "es: " + notaFinal);
-    } else{
-      console.log("Error notas ingresadas");}
+    } else {
+      console.log("Error notas ingresadas")}
+      nombreAlumno = nombreAlumno.value;
 });
